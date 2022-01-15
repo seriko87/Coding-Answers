@@ -1,0 +1,23 @@
+function whatIsInAName(collection, source) {
+  var arr = Object.keys(source);
+  // Only change code below this line
+
+
+  let arr1 = collection.filter(function(obj){
+         for (let i =0; i<arr.length; i++){
+           if (!obj.hasOwnProperty(arr[i]) || obj[arr[i]] !== source[arr[i]]){
+             return false
+           }
+           
+         }
+         return true
+        })
+
+console.log(arr1)
+console.log(arr)
+console.log(collection)
+  // Only change code above this line
+  return arr1;
+}
+
+whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });

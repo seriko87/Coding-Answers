@@ -1,0 +1,11 @@
+// Only change code below this line
+function urlSlug(title) {
+
+//let a = title.toLowerCase().split(/\W/).join("-");
+let sentence = title.toLowerCase().split(" ").filter(e => e!="").join("-")
+console.log(sentence);
+
+return(sentence)
+}
+// Only change code above this line
+urlSlug(" Hero is  Returning")

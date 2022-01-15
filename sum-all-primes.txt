@@ -1,0 +1,33 @@
+function sumPrimes(num) {
+  const arr= []
+  let x = 0;
+  let count =2;
+  while(count <=num){
+     if (prime(count)){
+       x+=count
+       arr.push(count)
+     }
+   
+    
+    
+    
+    count++
+  }
+
+  console.log(x)
+  return x;
+}
+
+
+function prime(e) {
+  let temp;
+  for (let i=2; i<e; i++){
+    if (Number.isInteger(e / i)) {
+     return false
+    } 
+  }
+  return true
+}
+console.log(prime(2))
+
+sumPrimes(977);

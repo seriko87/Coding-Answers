@@ -1,0 +1,9 @@
+function prime(e) {
+  let temp;
+  for (let i=2; i<e; i++){
+    if (Number.isInteger(e / i)) {
+     return false
+    } 
+  }
+  return true
+}

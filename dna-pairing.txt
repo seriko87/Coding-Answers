@@ -1,0 +1,23 @@
+function pairElement(str) {
+  const rdna = {
+    'A':'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+ 
+
+  let arr = str.split("")
+  let dna = [];
+  for (let i=0; i<arr.length; i++){
+    dna.push([arr[i],rdna[arr[i]]])
+   
+  }
+
+  return dna;
+}
+
+pairElement("GCG");
+
+//    ATCGATTGAGCTCTAGCG
+ //   TAGCTAACTCGAGATCGC

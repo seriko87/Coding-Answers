@@ -1,0 +1,21 @@
+function fearNotLetter(str) {
+  let abc ="abcdefghijklmnopqrstuvwxyz".split('');
+ 
+  let x = abc.indexOf(str[0])
+  for (let i = 0; i<str.length; i++){
+    if(str ==="abcdefghijklmnopqrstuvwxyz") {
+      
+      return undefined
+      } else if (abc[x] == str[i]){
+      
+    } else {
+      return abc[x]
+      
+    }
+    x++
+  }
+  
+  return str;
+}
+
+fearNotLetter("abcdefghijklmnopqrstuvwxyz");

@@ -1,0 +1,11 @@
+function sumAll(arr) {
+  arr = arr.sort((a,b) => a-b)
+  let x =0;
+  for (let i=arr[0]; i<=arr[1]; i++){
+    x +=i
+  }
+  return x
+  
+}
+
+sumAll([1, 4]);

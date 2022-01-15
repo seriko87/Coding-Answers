@@ -1,0 +1,18 @@
+function factorialize(num) {
+  let total = [];
+  let x = 1;
+
+  while (num>0) {
+    total.push(num)
+    num--
+  }
+  
+  for (let i=0; i <total.length; i++){
+    
+    x = x*total[i];
+    
+  }
+  return x;
+}
+
+console.log(factorialize());
